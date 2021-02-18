@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -119,7 +119,7 @@
                                     <nav class="collapse bg-primary-color">
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li>
-                                                <a class="nav-link text-white font-weight-light text-uppercase text-md-3 text-xl-4 desliza" data-toggle="collapse" data-target=".navbar-collapse.show" href="home.html#campanha">A campanha</a>
+                                                <a class="nav-link text-white font-weight-light text-uppercase text-md-3 text-xl-4 desliza" href="home.html#campanha">A Campanha</a>
                                             </li>
                                             <li>
                                                 <a class="nav-link text-white font-weight-light text-uppercase text-md-3 text-xl-4 desliza" href="home.html#produtos">Produtos</a>
@@ -143,213 +143,392 @@
             </div>
         </div>
     </header>
+    <!-- minhas compras -->
+    <br />
+    <section id="minhas-compras ">
+        <div class="container text-center py-1">
+         <div class="call-to-action with-borders py-4 mb-3">
+                <div class="col col-lg">
+                    <input type="text" class="form-control" name="">
+                    <div class="call-to-action-btn text-center">
+                        <a href="#"  class="LocalizarVoucher btn custom-btn-style-1 text-white font-weight-bold text-3 bg-blue-dark text-uppercase">Localizar N° Voucher</a>
+                    </div>
 
-    <!-- banner / carousel -->
-    <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="img-fluid" src="img/banner_CORAL.jpg">
+                </div>
             </div>
         </div>
- </div>
-
-    <!-- campanha -->
-    <section id="campanha">
+    </section>
+    <section>
         <div class="container text-center py-5">
-            <h2 class="text-6 text-md-8 text-uppercase text-blue-dark mb-3 mb-md-1 line-height-2 font-weight-bold">Campanha dinheiro de volta bayer</h2>
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto">
-                    <div class="row">
-                        <div class="col-12 col-md">
-                            <i class="fas fa-briefcase fa-3x text-blue-dark mb-3 mb-md-2"></i>
-                            <h3 class="mb-2 font-weight-bold text-4 text-blue-dark">QUEM PODE PARTICIPAR</h3>
-                            <p class="text-4 line-height-1">Empresas controladoras de pragas</p>
-                        </div>
-                        <div class="col-12 col-md">
-                            <i class="fas fa-shopping-basket fa-3x text-blue-dark mb-3 mb-md-2"></i>
-                            <h3 class="mb-2 font-weight-bold text-4 text-blue-dark">PRODUTOS VÁLIDOS</h3>
-                            <p class="text-4 line-height-1">Linha profissional Bayer</p>
-                        </div>
-                        <div class="col-12 col-md">
-                            <i class="far fa-calendar-alt fa-3x text-blue-dark mb-3 mb-md-2"></i>
-                            <h3 class="mb-2 font-weight-bold text-4 text-blue-dark">PERÍODO</h3>
-                            <p class="text-4 line-height-1">De outubro até dezembro de 2020</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Data de entrada</th>
+                        <th>Nº vocuher</th>
+                        <th>Status</th>
+                        <th>Detalhes</th>
+                        <th>Validar resgate</th>
+                        <th>Valor a receber</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/02/21</td>
+                        <td>123456</td>
+                        <td>Pendente</td>
+                        <td><a href="#" data-toggle="modal" data-target="#largeModalDetalheVoucher"><i class="fas fa-question"></i></a></td>
+                        <td><div class=" btn bg-blue-dark text-white ValidarVoucher">Validar</a></div></td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>10/02/21</td>
+                        <td>123456</td>
+                        <td>Pendente</td>
+                        <td><a href="#" data-toggle="modal" data-target="#largeModalDetalheVoucher"><i class="fas fa-question"></i></a></td>
+                        <td><div class=" btn bg-blue-dark text-white ValidarVoucher">Validar</a></div></td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>10/02/21</td>
+                        <td>123456</td>
+                        <td>Utilizado</td>
+                        <td><a href="#" data-toggle="modal" data-target="#largeModalDetalheVoucher"><i class="fas fa-question"></i></a></td>
+                        <td>Validado 20/02/21</td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>10/02/21</td>
+                        <td>123456</td>
+                        <td>Utilizado</td>
+                        <td><a href="#" data-toggle="modal" data-target="#largeModalDetalheVoucher"><i class="fas fa-question"></i></a></td>
+                        <td>Validado 20/02/21</td>
+                        <td>R$ 800,00</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
-
-    <!-- Regras da campanha -->
-    <section class="section section-text-light section-background section-center section-overlay section-overlay-dot my-0 py-4" style="background: url(img/banner-meio.png)no-repeat center center; background-size: cover;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-11 mx-auto">
-                    <i class="fas fa-tasks fa-3x mb-2 text-green"></i>
-                    <h4 class="text-6 text-md-8 text-uppercase text-blue-dark line-height-2 text-green">Regras da campanha</h4>
-                    <p class="text-4 text-md-6 line-height-3">Comprando a partir de R$ 1.200,00 em produtos profissionais Bayer, no mesmo distribuidor e dentro do mesmo mês, sua empresa recebe 10% de valor de volta.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- importante -->
-    <div class="col-md-10 mx-auto mt-5">
-        <section class="text-center section-text-light section-background section-center section-overlay section-overlay-dot my-0 py-4" style="background: url(img/banner-meio.png)no-repeat center center; background-size: cover;">
-            <div class="container">
-                <h4 class="text-uppercase text-7 font-weight-bold text-white mb-4 mt-2">Importante</h4>
-                <p class="mb-3 text-4 text-white font-weight-bold line-height-2">1. As compras dentro do mesmo mês podem ser somadas para totalizar o valor mínimo necessário de R$ 1.200,00</p>
-                <p class="mb-3 text-4 text-white font-weight-bold line-height-2">2. As compras devem ocorrer no mesmo distribuidor, dentro do mesmo mês</p>
-                <p class="mb-3 text-4 text-white font-weight-bold line-height-2">3. O valor máximo de cash back dentro do mesmo mês é de R$ 1.000,00, ou seja, o equivalente a R$ 10.000,00 em compras</p>
-                <p class="mb-3 text-4 text-white font-weight-bold line-height-2">4. Sua empresa pode participar todos os meses, mas, as compras serão válidas apenas dentro de um mesmo mês</p>
-                <p class="mb-3 text-4 text-white font-weight-bold line-height-2">5. Todas as notas fiscais serão analisadas para obter status de APROVADA ou REPROVADA. Antes desta análise, o status da nota fiscal será PENDENTE</p>
-                <p class="mb-3 text-4 text-white font-weight-bold line-height-2">6. A verba destinada ao pagamento de cashback tem valor máximo de R$ 90.000,00 e após este limite ser atingido, a campanha será encerrada</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- carousel produtos -->
-    <section id="produtos">
-        <div class="container text-center my-5">
-            <div class="row py-5">
-                <div class="col">
-                    <h2 class="text-uppercase text-6 text-blue-dark font-weight-bold mb-2">Produtos profissionais Bayer válidos</h2>
-                    <div class="owl-carousel owl-theme show-nav-title show-nav-title-both-sides" data-plugin-options="{'items': 5, 'margin': 10, 'loop': true, 'nav': true, 'dots': false, 'autoplay': true, 'autoplayTimeout': 5000}">
-                        <div>
-                            <a href="#" data-toggle="modal" data-target="#modal_produto-01">
-                                <img class="img-fluid rounded" src="img/produtos/decora_antiChuva.png">
-                                <span class="text-blue-dark text-4">Proteção Sol & Chuva Acrílico Total</span>
-                            </a>
-                        </div>
-                          <div>
-                            <a href="#" data-toggle="modal" data-target="#modal_produto-02">
-                                <img class="img-fluid rounded" src="img/produtos/decora_diamante.png">
-                                <span class="text-blue-dark text-4">Decora Diamante</span>
-                            </a>
-                        </div>
-                         <div>
-                            <a href="#" data-toggle="modal" data-target="#modal_produto-03">
-                                <img class="img-fluid rounded" src="img/produtos/SuperLavavel.png">
-                                <span class="text-blue-dark text-4">Super Lavável</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" data-toggle="modal" data-target="#modal_produto-04">
-                                <img class="img-fluid rounded" src="img/produtos/decora_mate.png">
-                                <span class="text-blue-dark text-4">Super Matte</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" data-toggle="modal" data-target="#modal_produto-05">
-                                <img class="img-fluid rounded" src="img/produtos/decora_sol_chuva.png">
-                                <span class="text-blue-dark text-4">Proteção Sol & Chuva Pintura Impermeabilizante</span>
-                            </a>
-                        </div>
-                         <div>
-                            <a href="#" data-toggle="modal" data-target="#modal_produto-06">
-                                <img class="img-fluid rounded" src="img/produtos/decora_seda.png">
-                                <span class="text-blue-dark text-4">Decora Seda</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" data-toggle="modal" data-target="#modal_produto-07">
-                                <img class="img-fluid rounded" src="img/produtos/decora_renovaTetos.png">
-                                <span class="text-blue-dark text-4">Renova paredes & tetos</span>
-                            </a>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- como participar -->
-    <section id="como-participar">
-        <div class="container py-4 my-5 text-center">
-            <i class="fas fa-question-circle fa-3x mb-2 text-blue-dark"></i>
-            <h4 class="text-uppercase text-6 text-blue-dark font-weight-bold mb-4">Como participar</h4>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="featured-box featured-box-primary mt-0">
-                        <div class="box-content">
-                            <p class="text-10 text-blue-dark mb-2 font-weight-bold">1</p>
-                            <p class="text-4 line-height-2">Cadastre sua empresa aqui no site,<br> completando todos os dados necessários.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="featured-box featured-box-primary mt-0">
-                        <div class="box-content">
-                            <p class="text-10 text-blue-dark mb-2 font-weight-bold">2</p>
-                            <p class="text-4 line-height-2">Acesse o site utilizando<br> seu login e senha.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="featured-box featured-box-primary mt-0">
-                        <div class="box-content">
-                            <p class="text-10 text-blue-dark mb-2 font-weight-bold">3</p>
-                            <p class="text-4 line-height-2">Clique no botão MINHAS COMPRAS<br> para lançar suas compras.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="featured-box featured-box-primary mt-0">
-                        <div class="box-content">
-                            <p class="text-10 text-blue-dark mb-2 font-weight-bold">4</p>
-                            <p class="text-4 line-height-2">Clique no botão NOVA COMPRA<br> e preencha o formulário.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="featured-box featured-box-primary mt-0">
-                        <div class="box-content">
-                            <p class="text-10 text-blue-dark mb-2 font-weight-bold">5</p>
-                            <p class="text-4 line-height-2">Após o preenchimento completo,<br> faça upload da nota fiscal.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <div class="featured-box featured-box-primary mt-0">
-                        <div class="box-content">
-                            <p class="text-10 text-blue-dark mb-2 font-weight-bold">6</p>
-                            <p class="text-4 line-height-2">Repita o processo para<br> cada nova nota fiscal.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-5">
-                <i class="fas fa-check-circle fa-2x text-blue-dark d-inline mr-1"></i>
-                <p class="text-4 text-md-5 text-blue-dark text-uppercase font-weight-bold line-height-1 mb-0 d-inline">Pronto!<br> O processo está concluído e aguardando validação.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pagamentos de cashback -->
-    <section class="text-center section-text-light section-background section-center section-overlay section-overlay-dot my-0 py-4" style="background: url(img/banner-meio.png)no-repeat center center; background-size: cover;">
-        <div class="container">
-            <div class="row">
-                <div class="col-9 mx-auto">
-                    <i class="fas fa-money-bill-alt fa-3x mb-2 text-green"></i>
-                    <h4 class="text-uppercase text-6 text-green font-weight-bold mb-3">Pagamentos de cashback</h4>
-                    <p class="text-4 text-white">Ao final de cada mês, suas compras serão validadas e, com todas as informações corretas, seu reembolso será processado. Caso ocorra alguma divergência, você será avisado por e-mail.</p>
-                    <p class="text-4 text-white mb-4">Você receberá o valor em até 30 dias por meio de um cartão pré-pago (bandeira MasterCard), que será enviado para o endereço cadastrado.</p>
-
-                    <a href="#" class="btn bg-green text-white text-uppercase font-weight-bold text-4 text-md-6 text-center" data-toggle="modal" data-target="#modal_Regulamento">CLIQUE AQUI E CONFIRA O REGULAMENTO</a>
-                </div>
-            </div>
-        </div>
-    </section>   
-
+   
     <!-- footer -->
     <footer id="footer" class="mt-0 pt-3 pb-2 bg-white border-0">
         <div class="container-fluid text-center">
             <img src="img/logoFooter.png" class="img-fluid">
         </div>
     </footer>
+
+    <div class="modal fade" id="modalEscolherRegiao" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="largeModalLabel">Encontrei o PDV mais próximo de você</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                   <div class="row">
+                        <div class="col-md-4">
+                            <label class="text-3 font-weight-bold">Digite sua localidade:</label>
+                            <input type="text" class="form-control" > 
+                            <div class="mb-2"></div>
+                            <div class= "btn bg-blue-dark form-control text-white py-1">Buscar</div>
+                            
+                            <hr>
+                            <strong>Rua Enxovia 472</strong>
+                            <label class="font-italic">Cidade - São Paulo/ Estado - São Paulo</label>   
+                            <hr>
+
+                            <strong>Rua da Paz 015</strong>
+                            <label class="font-italic">Cidade - São Paulo/ Estado - São Paulo</label>   
+                            <hr>
+
+                            
+                            <strong>Rua Tucam 874</strong>
+                            <label class="font-italic">Cidade - São Paulo/ Estado - São Paulo</label>   
+                            <hr>
+                             
+                        
+                        
+                        </div>
+
+                        <div class="col-md-8">
+                            <img src="img/mapaGeo.png" style="width: 100%;">
+                        </div>
+                   </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="largeModalDetalhes" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="largeModalLabel">Detalhes da Compra</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                   <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">CNPJ</label>
+                                    <div class="input-group">
+                                        <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Razão social</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_razaoSocial" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="mb-0">Nome do responsável</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_responsavel" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">CPF</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_cpf" type="text" disabled="disabled" class="form-control form-control-lg" mask-cpf required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Celular</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_celular" type="text" disabled="disabled" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Telefone</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_telefone" type="text" disabled="disabled" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">E-MAIL:</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_emailPrincipal" type="text" disabled="disabled" class="form-control form-control-lg" mask-email required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="mb-3"></div>
+                        <div class="col-12 col-md">
+                            <!-- <h2 class="text-5 mb-2 font-weight-bold">ENDEREÇO DA REVENDA</h2> -->
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md-6">
+                                    <label class="mb-0">CEP</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_cep" type="text" disabled="disabled" maxlength="15" class="form-control form-control-lg" mask-cep required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="mb-0">Endereço</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_endereco" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Número</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_numero" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Complemento</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_complemento" disabled="disabled" type="text" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Bairro</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_bairro" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Cidade</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_cidade" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-md-4">
+                                    <label class="mb-0">Estado</label>
+                                    <div class="input-group">
+                                        <input name="cadas_estado" id="cadas_estado" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="largeModalDetalheVoucher" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="largeModalLabel">Detalhes da Compra</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                   <div class="form-row">
+                        <div class="form-group col-12 col-md">
+                            <label class="mb-0">Nº vocuher</label>
+                            <div class="input-group">
+                                <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                            </div>
+                        </div>
+                         <div class="form-group col-12 col-md">
+                            <label class="mb-0">Status</label>
+                            <div class="input-group">
+                                <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                            </div>
+                        </div>
+                         <div class="form-group col-12 col-md">
+                            <label class="mb-0">Validado</label>
+                            <div class="input-group">
+                                <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">CNPJ</label>
+                                    <div class="input-group">
+                                        <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Razão social</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_razaoSocial" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="mb-0">Nome do responsável</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_responsavel" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">CPF</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_cpf" type="text" disabled="disabled" class="form-control form-control-lg" mask-cpf required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Celular</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_celular" type="text" disabled="disabled" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Telefone</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_telefone" type="text" disabled="disabled" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">E-MAIL:</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_emailPrincipal" type="text" disabled="disabled" class="form-control form-control-lg" mask-email required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md">
+                             <h2 class="text-5 mb-2 font-weight-bold">ENDEREÇO DA REVENDA</h2> 
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md-6">
+                                    <label class="mb-0">CEP</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_cep" type="text" disabled="disabled" maxlength="15" class="form-control form-control-lg" mask-cep required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="mb-0">Endereço</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_endereco" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Número</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_numero" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Complemento</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_complemento" disabled="disabled" type="text" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Bairro</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_bairro" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Cidade</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_cidade" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-md-4">
+                                    <label class="mb-0">Estado</label>
+                                    <div class="input-group">
+                                        <input name="cadas_estado" id="cadas_estado" disabled="disabled" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     <!-- modal Contato -->
     <div class="modal fade" id="contatoModal" tabindex="-1" role="dialog" aria-labelledby="ContatoModalLabel" aria-hidden="true">
@@ -414,28 +593,6 @@
                             <!-- <button type="button" class="btn bg-danger text-white" data-dismiss="modal">CANCELAR</button> -->
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Video -->
-    <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header py-2">
-                    <!-- <h5 class="modal-title">Video</h5> -->
-                    <button type="button" class="close fecharVideo" data-dismiss="modal" aria-label="Fechar">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="text-center">
-                        <iframe src="https://player.vimeo.com/video/128263604" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="modal-footer py-2">
-                    <button type="button" class="fecharVideo btn btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -626,7 +783,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- modal Login -->
     <div class="mt-5 modal fade" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -717,7 +874,30 @@
                     <div class="row">
                         <div class="col-12 col-md mb-md-4">
                             <!-- <h2 class="text-5 mb-2 font-weight-bold">DADOS PRINCIPAIS</h2> -->
-                           
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">CNPJ</label>
+                                    <div class="input-group">
+                                        <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" mask-cnpj required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">Razão social</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_razaoSocial" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="mb-0">Nome do responsável</label>
+                                    <div class="input-group">
+                                        <input name="" id="cadas_responsavel" type="text" class="form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-md">
                                     <label class="mb-0">CPF</label>
@@ -728,16 +908,7 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Nome Completo</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_Nome" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Nome Completo:</label>
+                                    <label class="mb-0">Celular</label>
                                     <div class="input-group">
                                         <input name="" id="cadas_celular" type="text" class="form-control form-control-lg" required>
                                     </div>
@@ -843,7 +1014,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
-                    <h4 class="modal-title">Cadastre-se/Login</h4>
+                    <h4 class="modal-title">Meus dados</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body px-4">
@@ -979,204 +1150,231 @@
             </div>
         </div>
     </div>
-
-    <div>
-        <!-- Modal Produtos - Produto 1 -->
-        <div class="modal fade show" id="modal_produto-01" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Proteção Sol & Chuva Acrílico Total</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/produtos/decora_antiChuva.png" class="img-fluid d-block mx-auto mb-4">
-                    </div>
+    
+    <!-- modal Verificar NF -->
+    <div class="modal fade" id="modal_verNF" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title">Verificar NF</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
-            </div>
-        </div>
+                <div class="modal-body">
 
-        <!-- Modal Produtos - Produto 2 -->
-        <div class="modal fade show" id="modal_produto-02" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Decora Diamante</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/decora_diamante.png">
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <img src="img/logoFooter.png" class="img-fluid d-block mx-auto">
 
-        <!-- Modal Produtos - Produto 3 -->
-        <div class="modal fade show" id="modal_produto-03" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Super Lavável</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/SuperLavavel.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 4 -->
-        <div class="modal fade show" id="modal_produto-04" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Super Matte</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/decora_mate.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 5 -->
-        <div class="modal fade show" id="modal_produto-05" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Proteção Sol & Chuva Pintura Impermeabilizante</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/decora_sol_chuva.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 6 -->
-        <div class="modal fade show" id="modal_produto-06" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Decora Seda</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/decora_seda.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 7 -->
-        <div class="modal fade show" id="modal_produto-07" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Renova paredes & tetos</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/decora_renovaTetos.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 8 -->
-        <div class="modal fade show" id="modal_produto-08" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Racumin&reg; Pó</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/Racumin-Po.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 9 -->
-        <div class="modal fade show" id="modal_produto-09" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Rodilon&reg; Bloco Extrusado</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/Rodilon.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 10 -->
-        <div class="modal fade show" id="modal_produto-10" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Rodilon&reg; Soft Bait</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/Rodilon-Soft-Bait.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 11 -->
-        <div class="modal fade show" id="modal_produto-11" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Starycide&reg; SC 480</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/Starycide-SC480.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 12 -->
-        <div class="modal fade show" id="modal_produto-12" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Temprid&reg; SC</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/Temprid-SC.jpg">
-                        <span class="text-blue-dark text-4">Temprid SC</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Produtos - Produto 12 -->
-        <div class="modal fade show" id="modal_produto-13" tabindex="-1" role="dialog" aria-modal="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Solfac&reg; SC 1,25</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <img class="img-fluid rounded" src="img/produtos/SOLFAC-SC.jpg">
+                    <div class="modal-footer pb-1 border-0">
+                        <button type="button" class="btn bg-blue-dark text-white" data-dismiss="modal">FECHAR</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- modal Cadastrar compra -->
+    <div class="modal fade" id="modal_cadastrarCompra" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="loginModalLabel">DADOS DO PDV</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body px-4">
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <!-- <h2 class="text-5 mb-2 font-weight-bold">DADOS PRINCIPAIS</h2> -->
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md-9">
+                                    <label class="mb-0">CNPJ:</label>
+                                    <div class="input-group">
+                                        <input name="" id="compra_data" type="text" class=" form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-5 col-md-3" style="margin-top: 8%;">
+                                    <div class="btn bg-blue-dark text-white text-uppercase">Buscar</div>
+                                </div>
+                            </div>
+                            <div class="form-row disabled">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">NOME LOJA:</label>
+                                    <div class="input-group">
+                                        <input name="" id="compra_distribuidor" type="text" class="disabled form-control form-control-lg" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">CIDADE:</label>
+                                    <select CLASS="disabled form-control">
+                                        <option CLASS="disabled"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row disabled">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">ESTADO:</label>
+                                    <select CLASS="disabled form-control">
+                                        <option CLASS="disabled"></option>
+                                    </select>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="modal-footer pb-1 border-0">
+                        <a href="#" class="btn bg-blue-dark text-white text-uppercase"id="btn_prox">Próximo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- modal Cadastrar compra -->
+    <div class="modal fade" id="modal_ProximoItemCadastro" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="loginModalLabel">DADOS DA COMPRA</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class="modal-body px-4">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <!-- <h2 class="text-5 mb-2 font-weight-bold">DADOS PRINCIPAIS</h2> -->
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">DATA DA COMPRA</label>
+                                    <div class="input-group">
+                                       <input type="date" class="form-control" name="nascimento" id="nascimento">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row disabled">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">PRODUTO(S) ADQUIRIDO(S)</label>
+                                    <select class="form-control">
+                                        <option>PRODUTO 01</option>
+                                        <option>PRODUTO 02</option>
+                                        <option>PRODUTO 03</option>
+                                        <option>PRODUTO 04</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12">
+                            <!-- <h2 class="text-5 mb-2 font-weight-bold">ENDEREÇO DA REVENDA</h2> -->
+                            <div class="form-group">
+                                <div class="input-append">
+                                    <div>
+                                        <span class="fileupload-preview">Upload da Nota Fiscal:</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span class="btn btn-block border font-weight-bold btn-file">
+                                                <!-- <span class="fileupload-exists">Mudar</span> -->
+                                                <!-- <span class="fileupload-new ">Upload</span> -->
+                                                <input data-img="" data-obrigatorio="" type="file" accept="image/*" name="imgFileUpload">
+                                            </span>
+                                            <!-- <a href="#" class="btn bg-blue-light text-white font-weight-bold fileupload-exists" data-dismiss="fileupload">Remove</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">PREÇO DO(S) PRODUTO(S)</label>
+                                   <input class="form-control" type="text" id="moeda" onkeyup="formataValor(this)" />
+                                </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">VALOR TOTAL DA NF</label>
+                                   <input class="form-control" type="text" id="moeda" onkeyup="formataValor(this)" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <div class="input-append">
+                                        <!-- <div class="uneditable-input mx-auto">
+                                            <div id="image-holder" class="">
+                                            </div>
+                                            <i class="fa fa-upload fileupload-not-exists"></i>
+                                        </div> -->
+                                        <div>
+                                            <span class="fileupload-preview">FOTO DA NOTA FISCAL</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <span class="btn btn-block border font-weight-bold btn-file">
+                                                    <!-- <span class="fileupload-exists">Mudar</span> -->
+                                                    <!-- <span class="fileupload-new ">Upload</span> -->
+                                                    <input data-img="" data-obrigatorio="" type="file" accept="image/*" name="imgFileUpload">
+                                                </span>
+                                                <!-- <a href="#" class="btn bg-blue-light text-white font-weight-bold fileupload-exists" data-dismiss="fileupload">Remove</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">ENDEREÇO COMPLETO DA OBRA</label>
+                                   <input class="form-control" type="text"/>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <div class="input-append">
+                                    <!-- <div class="uneditable-input mx-auto">
+                                        <div id="image-holder" class="">
+                                        </div>
+                                        <i class="fa fa-upload fileupload-not-exists"></i>
+                                    </div> -->
+                                    <div>
+                                        <span class="fileupload-preview">FOTOS DA OBRA</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span class="btn btn-block border font-weight-bold btn-file">
+                                                <!-- <span class="fileupload-exists">Mudar</span> -->
+                                                <!-- <span class="fileupload-new ">Upload</span> -->
+                                                <input data-img="" data-obrigatorio="" type="file" accept="image/*" name="imgFileUpload">
+                                            </span>
+                                            <!-- <a href="#" class="btn bg-blue-light text-white font-weight-bold fileupload-exists" data-dismiss="fileupload">Remove</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="form-row disabled">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">MOTIVO DA TROCA</label>
+                                    <select class="form-control">
+                                        <option>MOTIVO 01</option>
+                                        <option>MOTIVO 02</option>
+                                        <option>MOTIVO 03</option>
+                                        <option>MOTIVO 04</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                 <div class="form-group col-12 col-md">
+                                    <label class="mb-0">REGISTRO DA RECLAMAÇÃO</label>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <div class="modal-footer col-md-4 pb-1 border-0">
+                            <div class="btn bg-blue-dark text-white text-uppercase">Finalizar</div>
+                        </div>
+                        <div class="modal-footer col-md-7 pb-1 border-0">
+                            <a href="#" class="btn bg-blue-light text-white text-uppercase"id="btnVoltar">Voltar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Vendor -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -1216,100 +1414,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.9/dist/sweetalert2.all.min.js"></script>
     <script>
-        // Mostrar video assim que o site carregar
-        $(document).ready(function () {
-            $('#modalVideo').modal('show');
+        $('.alertaSite').click(function () {
+            Swal.fire(
+                'Em breve',
+                '',
+                'info'
+            );
         });
-
-        // parar video quando a modal sumir
-        $("#modalVideo").on('hidden.bs.modal', function(){
-           var iframe = document.getElementsByTagName("iframe")[0].contentWindow;
-           iframe.postMessage('{"method":"pause"}', '*');
+            $('.ValidarVoucher').click(function () {
+            Swal.fire(
+                'Em breve',
+                '',
+                'info'
+            );
         });
-    </script>
-
-    <script>
-        // Transição suave entre os menus
-        $(function() {
-          // Handler for .ready() called.
-          // Deslize suave
-          $(".desliza").on("click", function (e) {
-            e.preventDefault();
-            var target = this.hash;
-            var $target = $(target);
-            $("html, body").stop().animate({
-                "scrollTop": (
-                    $target.offset().top - ($("header").hasClass("fixed-top") ? $("header").height() : 80 )
-                )
-            }, 900, "swing", null);
-          });
+            $('.LocalizarVoucher').click(function () {
+            Swal.fire(
+                'Localizado',
+                '',
+                'success'
+            );
         });
-
-        // fechar menu no mobile
-        $('.collapse a').click(function(){
-            $(".collapse").collapse('hide');
-        });
-    </script>
-
-    <script>
-        // // Script Armazenamento de Cookies
-        // window.addEventListener("load", CheckCookies);
-        // // Se quiser limpar o 'cookie', descomenta a linha abaixo
-        // window.localStorage.removeItem("site_name_cookie");
-        // function CheckCookies() {
-        //     if (window.localStorage.getItem("site_name_cookie") == null) {
-        //         let cookieContainer = document.createElement("div");
-        //         cookieContainer.className = "cookie-container";
-        //         cookieContainer.innerHTML = `
-        //             <div id="aviso-cookie" class="shadow rounded">
-        //                 <div class="row py-2 mt-1">
-        //                     <div class="col-10 px-5">
-        //                         <p class="mb-2 text-3 line-height-2">Posso pegar seus dados de navegação para proporcionar uma melhor experiência em nosso site? <a href="#">Lorem ipsum dolor</a> sit amet consectetur adipisicing elit. Eius voluptate nobis iusto</p>
-        //                     </div>
-        //                     <div class="col">
-        //                         <a class="cookie-y btn btn-dark text-white mx-2 py-1">Sim</a>
-        //                         <a class="cookie-n btn btn-dark text-white mx-2 py-1">Não</a>
-        //                     </div>
-        //                 </div>
-        //             </div>`
-        //         ;
-        //         document.querySelector("body").appendChild(cookieContainer);
-        //         document.querySelector(".cookie-container .cookie-y").addEventListener("click", SetCookie);
-        //         document.querySelector(".cookie-container .cookie-n").addEventListener("click", DismissCookie);
-        //     } else {
-        //         document.querySelector("body").innerHTML = `<p>${window.localStorage.getItem("site_name_cookie")}</p>`;
-        //     }
-        // }
-
-        // function SetCookie(e) {
-        //     e.preventDefault();
-        //     this.removeEventListener("click", SetCookie);
-        //     window.localStorage.setItem(
-        //         "site_name_cookie",
-        //         "Armazenamento de dados permitida"
-        //     );
-        //     DismissCookie(true);
-        // }
-
-        // function DismissCookie(e, flag) {
-        //     console.log(this);
-        //     if (this != window) {
-        //         e.preventDefault();
-        //         this.removeEventListener("click", DismissCookie);
-        //     }
-        //     let dismissElement = document.querySelector(".cookie-container");
-        //     dismissElement.style.opacity = "1";
-        //     let fadeElement = setInterval(function () {
-        //         if (dismissElement.style.opacity > 0) {
-        //             dismissElement.style.opacity = (
-        //                 parseFloat(dismissElement.style.opacity) - 0.1
-        //             ).toString();
-        //         } else {
-        //             dismissElement.remove();
-        //             clearInterval(fadeElement);
-        //         }
-        //     }, 50);
-        // }
+      
     </script>
 
     <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.

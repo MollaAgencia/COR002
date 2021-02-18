@@ -2,9 +2,9 @@
 
 /* --- global --- */
 	:root{
-		--blue-dark:#006c97!important;
-		--blue-light:#00bff3!important;
-		--green:#a6ce38!important;
+		--blue-dark:#032b66!important;
+		--blue-light:#dbb964!important;
+		--green:#a78532!important;
 	}
 	html .btn-outline.btn-primary{
 		color: #fff;
