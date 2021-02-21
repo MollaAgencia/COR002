@@ -124,8 +124,8 @@
                                             <li>
                                                 <a class="nav-link text-white font-weight-light text-uppercase text-md-3 text-xl-4 desliza" href="home.html#produtos">Produtos</a>
                                             </li>
-                                            <li>
-                                                <a class="nav-link text-white font-weight-light text-uppercase text-md-3 text-xl-4 desliza" href="home.html#como-participar">Solicitar Troca</a>
+                                             <li>
+                                                <a class="nav-link text-white font-weight-light text-uppercase text-md-3 text-xl-4 desliza" href="home.html#como-participar">Processo de Troca</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -145,15 +145,20 @@
     </header>
     <!-- minhas compras -->
     <br />
-    <section id="minhas-compras ">
-        <div class="container text-center py-1">
-         <div class="call-to-action with-borders py-4 mb-3">
-                <div class="col col-lg">
-                    <input type="text" class="form-control" name="">
-                    <div class="call-to-action-btn text-center">
-                        <a href="#"  class="LocalizarVoucher btn custom-btn-style-1 text-white font-weight-bold text-3 bg-blue-dark text-uppercase">Localizar N° Voucher</a>
-                    </div>
+ <section id="minhas-compras">
+        <div class="container text-center py-5">
 
+            <div class="call-to-action with-borders py-4 mb-3">
+                <div class="col-md-4 col-lg-8">
+                    <div class="call-to-action-content">
+                        <h3 class="mb-0 text-6 font-weight-bold">Consultar voucher</h3>
+                    </div>
+                    <input type="text" class="form-control" name="">
+                </div>
+                                <div class="col col-lg">
+                    <div class="call-to-action-btn text-center">
+                        <a href="#"  class="btn custom-btn-style-1 text-white font-weight-bold text-3 bg-blue-dark text-uppercase">Buscar</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,7 +182,7 @@
                         <td>123456</td>
                         <td>Pendente</td>
                         <td><a href="#" data-toggle="modal" data-target="#largeModalDetalheVoucher"><i class="fas fa-question"></i></a></td>
-                        <td><div class=" btn bg-blue-dark text-white ValidarVoucher">Validar</a></div></td>
+                        <td><div class=" btn bg-blue-dark text-white confirmaBtn">Validar</a></div></td>
                         <td>R$ 800,00</td>
                     </tr>
                     <tr>
@@ -185,7 +190,7 @@
                         <td>123456</td>
                         <td>Pendente</td>
                         <td><a href="#" data-toggle="modal" data-target="#largeModalDetalheVoucher"><i class="fas fa-question"></i></a></td>
-                        <td><div class=" btn bg-blue-dark text-white ValidarVoucher">Validar</a></div></td>
+                        <td><div class=" btn bg-blue-dark text-white confirmaBtn">Validar</a></div></td>
                         <td>R$ 800,00</td>
                     </tr>
                     <tr>
@@ -391,138 +396,124 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
-                   <div class="form-row">
-                        <div class="form-group col-12 col-md">
-                            <label class="mb-0">Nº vocuher</label>
-                            <div class="input-group">
-                                <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                    <div class="modal-body px-4">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <!-- <h2 class="text-5 mb-2 font-weight-bold">DADOS PRINCIPAIS</h2> -->
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">DATA DA COMPRA</label>
+                                    <div class="input-group">
+                                       <input type="date" class="form-control" name="nascimento" id="nascimento">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                         <div class="form-group col-12 col-md">
-                            <label class="mb-0">Status</label>
-                            <div class="input-group">
-                                <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                             <div class="form-row ">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">NÚMERO DA NOTA FISCAL</label>
+                                   <input class="form-control" type="text"  />
+                                </div>
                             </div>
-                        </div>
-                         <div class="form-group col-12 col-md">
-                            <label class="mb-0">Validado</label>
-                            <div class="input-group">
-                                <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
+                            <div class="form-row disabled">
+                                <div class="form-group col-4 col-md">
+                                    <label class="mb-0">PRODUTO(S)</label>
+                                    <select class="form-control">
+                                        <option>PRODUTO 01</option>
+                                        <option>PRODUTO 02</option>
+                                        <option>PRODUTO 03</option>
+                                        <option>PRODUTO 04</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-4 col-md">
+                                    <label class="mb-0">QTDE</label>
+                                   <input class="form-control" type="number"  />
+                                </div>
+                                <div class="form-group col-4 col-md">
+                                    <label class="mb-0">PREÇO </label>
+                                   <input class="form-control" type="text" id="moeda" onkeyup="formataValor(this)" />
+                                </div>
                             </div>
+                          
+                           
+                            <div class="form-row ">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">VALOR TOTAL DA NF</label>
+                                   <input class="form-control" type="text" id="moeda" onkeyup="formataValor(this)" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <div class="input-append">
+                                        <!-- <div class="uneditable-input mx-auto">
+                                            <div id="image-holder" class="">
+                                            </div>
+                                            <i class="fa fa-upload fileupload-not-exists"></i>
+                                        </div> -->
+                                        <div>
+                                            <span class="fileupload-preview">FOTO DA NOTA FISCAL</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                               
+                                                <!-- <a href="#" class="btn bg-blue-light text-white font-weight-bold fileupload-exists" data-dismiss="fileupload">Remove</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">ENDEREÇO COMPLETO DA OBRA</label>
+                                   <input class="form-control" type="text"/>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <div class="input-append">
+                                    <!-- <div class="uneditable-input mx-auto">
+                                        <div id="image-holder" class="">
+                                        </div>
+                                        <i class="fa fa-upload fileupload-not-exists"></i>
+                                    </div> -->
+                                    <div>
+                                        <span class="fileupload-preview">FOTOS DA OBRA</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            
+                                            <!-- <a href="#" class="btn bg-blue-light text-white font-weight-bold fileupload-exists" data-dismiss="fileupload">Remove</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="form-row disabled">
+                                <div class="form-group col-12 col-md">
+                                    <label class="mb-0">MOTIVO DA TROCA</label>
+                                    <select class="form-control">
+                                        <option>MOTIVO 01</option>
+                                        <option>MOTIVO 02</option>
+                                        <option>MOTIVO 03</option>
+                                        <option>MOTIVO 04</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                 <div class="form-group col-12 col-md">
+                                    <label class="mb-0">REGISTRO DA RECLAMAÇÃO</label>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                           
                         </div>
+
+                        
                     </div>
+                </div>
 
-
-                        <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">CNPJ</label>
-                                    <div class="input-group">
-                                        <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" disabled="disabled" mask-cnpj required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Razão social</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_razaoSocial" disabled="disabled" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="mb-0">Nome do responsável</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_responsavel" disabled="disabled" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">CPF</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_cpf" type="text" disabled="disabled" class="form-control form-control-lg" mask-cpf required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Celular</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_celular" type="text" disabled="disabled" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Telefone</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_telefone" type="text" disabled="disabled" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">E-MAIL:</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_emailPrincipal" type="text" disabled="disabled" class="form-control form-control-lg" mask-email required>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
-                        <div class="col-12 col-md">
-                             <h2 class="text-5 mb-2 font-weight-bold">ENDEREÇO DA REVENDA</h2> 
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md-6">
-                                    <label class="mb-0">CEP</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_cep" type="text" disabled="disabled" maxlength="15" class="form-control form-control-lg" mask-cep required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="mb-0">Endereço</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_endereco" disabled="disabled" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Número</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_numero" disabled="disabled" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Complemento</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_complemento" disabled="disabled" type="text" class="form-control form-control-lg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Bairro</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_bairro" disabled="disabled" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Cidade</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_cidade" disabled="disabled" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                                <div class="form-group col-12 col-md-4">
-                                    <label class="mb-0">Estado</label>
-                                    <div class="input-group">
-                                        <input name="cadas_estado" id="cadas_estado" disabled="disabled" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
+               
+                
+            </div>
+        </div>
+    </div>
                    
                 </div>
                 
@@ -794,7 +785,7 @@
                 </div>
                 <div class="modal-body p-4">
                     <div class="form-group mb-3">
-                        <label class="mb-0">CNPJ</label>
+                        <label class="mb-0">CPF</label>
                         <div class="input-group">
                             <input name="" id="login_cnpj" type="text" class="form-control form-control-lg" maxlength="10">
                             <span class="input-group-append">
@@ -862,8 +853,9 @@
     </div>    
 
     <!-- modal Cadastro -->
+    <!-- modal Cadastro -->
     <div class="modal fade" id="modal_cadastro" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog ">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
                     <h4 class="modal-title" id="loginModalLabel">Cadastro</h4>
@@ -872,32 +864,9 @@
                 <div class="modal-body px-4">
                     
                     <div class="row">
-                        <div class="col-12 col-md mb-md-4">
+                        <div class="col-12 col-md">
                             <!-- <h2 class="text-5 mb-2 font-weight-bold">DADOS PRINCIPAIS</h2> -->
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">CNPJ</label>
-                                    <div class="input-group">
-                                        <input name="cadas_cnpjPrincipal" id="cadas_cnpjPrincipal" type="text" maxlength="18" class="form-control form-control-lg" mask-cnpj required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Razão social</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_razaoSocial" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="mb-0">Nome do responsável</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_responsavel" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <div class="form-row">
                                 <div class="form-group col-12 col-md">
                                     <label class="mb-0">CPF</label>
@@ -908,11 +877,14 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Celular</label>
+                                    <label class="mb-0">Nome Completo</label>
                                     <div class="input-group">
-                                        <input name="" id="cadas_celular" type="text" class="form-control form-control-lg" required>
+                                        <input name="" id="cadas_Nome" type="text" class="form-control form-control-lg" required>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="form-row">
                                 <div class="form-group col-12 col-md">
                                     <label class="mb-0">Telefone</label>
                                     <div class="input-group">
@@ -922,72 +894,27 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-md">
-                                    <label class="mb-0">E-MAIL:</label>
+                                    <label class="mb-0">E-mail</label>
                                     <div class="input-group">
                                         <input name="" id="cadas_emailPrincipal" type="text" class="form-control form-control-lg" mask-email required>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-12 col-md">
-                            <!-- <h2 class="text-5 mb-2 font-weight-bold">ENDEREÇO DA REVENDA</h2> -->
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md-6">
-                                    <label class="mb-0">CEP</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_cep" type="text" maxlength="15" class="form-control form-control-lg" mask-cep required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="mb-0">Endereço</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_endereco" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
+                                  <div class="form-row">
                                 <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Número</label>
+                                    <label class="mb-0">Senha</label>
                                     <div class="input-group">
-                                        <input name="" id="cadas_numero" type="text" class="form-control form-control-lg" required>
+                                        <input name="" id="cadas_celular" type="password" class="form-control form-control-lg" required>
                                     </div>
                                 </div>
                                 <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Complemento</label>
+                                    <label class="mb-0">Confirmar Senha</label>
                                     <div class="input-group">
-                                        <input name="" id="cadas_complemento" type="text" class="form-control form-control-lg">
+                                        <input name="" id="cadas_telefone" type="password" class="form-control form-control-lg" required>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Bairro</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_bairro" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 col-md">
-                                    <label class="mb-0">Cidade</label>
-                                    <div class="input-group">
-                                        <input name="" id="cadas_cidade" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                                <div class="form-group col-12 col-md-4">
-                                    <label class="mb-0">Estado</label>
-                                    <div class="input-group">
-                                        <input name="cadas_estado" id="cadas_estado" type="text" class="form-control form-control-lg" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="alert alert-default font-weight-bold line-height-3 py-2 mt-2">OBS: O endereço cima será utilizado para envio do cartão com o seu reembolso.</div>
-
-                            <div class="form-check mb-2">
+                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" value="" id="regulamento" valida-checkbox="" required>
 
                                 <label class="form-check-label line-height-3" for="termo de uso">Eu li e concordo com o <a class="text-primary" href="#" data-toggle="modal" data-target="#modal_TermoUso"><u>TERMO DE USO</u></a> e o <a class="text-primary" href="#" data-toggle="modal" data-target="#modal_Regulamento"><u>REGULAMENTO</u></a> da campanha.</label>
@@ -999,6 +926,8 @@
                                 <label class="form-check-label line-height-3" for="termo de uso">Desejo receber informações da CORAL e de seus produtos.</label>
                             </div>
                         </div>
+
+        
                     </div>
 
                     <div class="modal-footer pb-1 border-0">
@@ -1008,7 +937,6 @@
             </div>
         </div>
     </div>
-
     <!-- modal meus dados -->
     <div class="modal fade" id="modal_perfil" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -1435,6 +1363,25 @@
                 'success'
             );
         });
+            $('.confirmaBtn').click(function(){
+               Swal.fire({
+                  title: 'Validar Voucher',
+                  text: "Deseja Validar esse voucher?",
+                  icon: 'warning',
+                  showCancelButton: true,
+                  confirmButtonColor: '#3085d6',
+                  cancelButtonColor: '#d33',
+                  confirmButtonText: 'CONFIRMAR'
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    Swal.fire(
+                      'Deleted!',
+                      'Your file has been deleted.',
+                      'success'
+                    )
+                  }
+                })    
+            });
       
     </script>
 
